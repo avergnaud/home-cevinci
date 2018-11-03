@@ -1,0 +1,189 @@
+body {
+    background-color: #fdfdfd;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#background-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 670px;
+  width: 100%;
+  background-image: url('./clouds-countryside-daylight-51947.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: 0;
+}
+
+#masque {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 670px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(255,255,255,0));
+}
+
+.blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+#carte {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    align-items: center;
+    width: 100%;
+    color: #fdfdfd;
+    height: 670px;
+}
+
+.image-cropper{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#menu {
+    /*display: none;*/
+    /*position: fixed;*/
+    /*background: rgba(0,0,0,0.5);*/
+    padding: 5px;
+    margin-left: 10px;
+    z-index: 10;
+    list-style: none;
+    padding-left: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.white-link {
+    color: #fdfdfd;
+}
+
+#menu li a {
+    text-decoration: none;
+}
+
+#menu li a.active,
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+#source {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+#titre {
+    position:absolute;
+    display: table;
+    color: #fdfdfd;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    height: 670px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+
+#titre #contenu-titre {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section:first-of-type {
+    height: 670px;
+    visibility: hidden;
+}
+
+section {
+    display: table;
+    width: 50%;
+    margin-left: 50%;
+    height: 500px;
+}
+section span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+  text-align: justify;
+    text-justify: inter-word;
+}
+
+#france{
+    display: inline;
+    margin: 0 auto;
+  }
+
+.hidden {
+    visibility:hidden
+}
+/* svg */
+path[id^='path'] {
+    /*display: none; */
+}
+
+path.region {
+    cursor: pointer;
+}
+
+section#alsace {
+    background-color: rgb(198, 63, 137, 0.2);
+    border-left: 5px solid rgb(198, 63, 137);
+}
+section#armagnac {
+    background-color: rgb(251, 237, 32, 0.2);
+    border-left: 5px solid rgb(251, 237, 32);
+}
+section#bordeaux {
+    background-color: rgb(241, 103, 48, 0.2);
+    border-left: 5px solid rgb(241, 103, 48);
+}
+section#bourgogne {
+    background-color: rgb(242, 140, 185, 0.2);
+    border-left: 5px solid rgb(242, 140, 185);
+}
+section#champagne {
+    background-color: rgb(252, 184, 17, 0.2);
+    border-left: 5px solid rgb(252, 184, 17);
+}
+section#cognac {
+    background-color: rgb(167, 215, 180, 0.2);
+    border-left: 5px solid rgb(167, 215, 180);
+}
+section#jura {
+    background-color: rgb(140, 142, 145, 0.2);
+    border-left: 5px solid rgb(140, 142, 145);
+}
+section#languedoc {
+    background-color: rgb(145, 188, 61, 0.2);
+    border-left: 5px solid rgb(145, 188, 61);
+}
+section#provence {
+    background-color: rgb(144, 126, 186, 0.2);
+    border-left: 5px solid rgb(144, 126, 186);
+}
+section#savoie {
+    background-color: rgb(232, 27, 35, 0.2);
+    border-left: 5px solid rgb(232, 27, 35);
+}
+section#sud-ouest {
+    background-color: rgb(119, 209, 246, 0.2);
+    border-left: 5px solid rgb(119, 209, 246);
+}
+section#loire {
+    background-color: rgb(73, 182, 72, 0.2);
+    border-left: 5px solid rgb(73, 182, 72);
+}
+section#rhone {
+    background-color: rgb(0, 80, 161, 0.2);
+    border-left: 5px solid rgb(0, 80, 161);
+}
