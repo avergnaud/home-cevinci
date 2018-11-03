@@ -187,3 +187,37 @@ section#rhone {
     background-color: rgb(0, 80, 161, 0.2);
     border-left: 5px solid rgb(0, 80, 161);
 }
+
+/* RWD */
+@media only screen and (max-width: 1140px) {
+    #background-image {
+        height: 570px;
+    }
+    #masque {
+        height: 570px;
+    }
+    #titre {
+        width: 100%;
+        height: initial;
+        font-size: 18px;
+    }
+    #titre #contenu-titre {
+        display: initial;
+
+    }
+    #carte {
+        position: absolute;
+        grid-template-columns: 1fr 2fr;
+        height: 570px;
+    }
+    section:first-of-type {
+        height: 570px;
+    }
+    section {
+        width: initial;
+        margin-left: 10%;
+    }
+    #source {
+        display: none;
+    }
+}
